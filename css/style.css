@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 2rem;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    /* no underline */
+}
+
+.navmenu {
+    margin-top: .4rem;
+    justify-content: right;
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.hnome {
+    display: flex;
+    border: 1px solid #3949AB;
+    border-radius: 10px;
+    margin-right: auto;
+
+}
+
+nav a {
+    box-sizing: border-box;
+    padding: .6rem;
+    text-decoration: none;
+    /* no underline */
+    color: #3949AB;
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    background-color: #3949AB;
+    color: white;
+    transition: ease-out .3s;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: 7rem;
+
+}
+
+.inicio p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+}
+
+.saibamais {
+    margin-top: .7rem;
+    background-color: #3949AB;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+    transition: ease-out .3s;
+    box-shadow: rgb(87, 87, 87) 1px 2px 8px;
+}
+
+.saibamais:hover {
+    letter-spacing: .1rem;
+    transition: ease-in-out .4s;
+
+}
+
+.devphoto {
+    width: 600px;
+    z-index: 1;
+}
+
+.sobre {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    background-color: #3949AB;
+    color: whitesmoke;
+}
+
+.sobre h2 {
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.sdescri {
+    flex-direction: column;
+    text-align: left;
+    margin: 2px 80px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.sdescri p {
+    margin-top: 1rem;
+}
+
+.mephoto {
+    display: flex;
+    min-width: 300px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 80px;
+    border: 4px solid whitesmoke;
+    box-shadow: rgb(75, 75, 75) 1px 1px 10px;
+}
+
+.containerp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    background-color: white;
+}
+
+.containerp h2 {
+    font-size: 4.2rem;
+}
+
+.projetos {
+    display: grid;
+    gap: 30px 100px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projetos img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: rgb(75, 75, 75) 1px 1px 10px;
+}
+
+.projetos img:hover {
+    width: 310px;
+    transition: ease-in-out .3s;
+    box-shadow: rgb(75, 75, 75) 1px 1px 10px;
+}
+
+.rodape {
+    display: flex;
+    background-color: #3949AB;
+    box-sizing: border-box;
+    color: whitesmoke;
+    justify-content: center;
+    padding: .5rem;
+    box-shadow: rgb(119, 119, 119) 1px -1px 8px;
+}
+
+.rodape a {
+    margin: 1rem;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.rodape a:hover {
+    background-color: whitesmoke;
+
+    color: #3949AB;
+    ;
+    transition: ease-in-out .2s;
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sobre {
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+    }
+
+    .sobre h2 {
+        text-align: center;
+    }
+
+    .sdescri {
+        margin-left: 1rem;
+        text-align: justify;
+    }
+
+    .mephoto {
+        margin-top: auto;
+        min-width: 200px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .containerp h2 {
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr;
+        height: 80vh;
+    }
+
+    .projetos img {
+        width: 250px;
+    }
+
+    .rodape {
+        position: relative;
+        bottom: -200px;
+    }
+
+    .rodape a {
+        font-size: .9rem;
+    }
+}
